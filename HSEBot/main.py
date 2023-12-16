@@ -113,6 +113,8 @@ with sqlite3.connect('studdata.db') as con:
         :rtype: message.answer
         """
 
+        await exlogging(message)
+
         try:
             with sqlite3.connect('studdata.db') as conn:
                 conn.cursor().execute('insert into students values (?, ?)',
@@ -178,6 +180,8 @@ with sqlite3.connect('studdata.db') as con:
         :returns: Присылает список всех мероприиятий для выбора
         :rtype: message.answer
         """
+
+        await exlogging(message)
 
         evs = currentevents()[0:8]
         btns = []
