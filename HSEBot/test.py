@@ -12,7 +12,7 @@ def converter(n):
     :param n: Строка из числа и названия месяца
     :return: Заданное время в секундах
     """
-    print(n)
+    
     datetime_object = datetime.datetime.fromtimestamp(time.time())
     print(datetime_object)
     dates = {
