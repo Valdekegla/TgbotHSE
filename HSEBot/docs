@@ -1,0 +1,90 @@
+    trashcan:
+
+        """
+        Функция обрабатывающая нежелательные сообщения.
+        :param message: Запрос об окончаниии выбора
+        :type message: aiogram.types.message.Message
+        :returns: Сообщение и стикер
+        :rtype: message
+        """
+
+
+    loll:
+
+        """
+        Функция обрабатывающая запрос с инлай клавиатуры сообщения.
+        :param callback: Запрос об окончаниии выбора
+        :type callback: aiogram.types.callback.CallBackQuery
+        :returns: Убирает сообщение с выбором меропритий
+        :rtype: callback
+        """
+
+
+    final:
+
+    """
+    Функция удаляющая выбранное событтие.
+    :param callback: Принимает коллбек запрос
+    :type callback: aiogram.types.callback.CallBackQuery
+    :returns: Обрабатывает запрос с прошлой функции и удаляет выбранное событие
+    :rtype: callback
+    """
+
+
+    dell:  # !
+
+        """
+        Фунеция отлавливающая коллбек запрос на удаление мероприятия.
+        :param callback:
+        :type callback: aiogram.types.callback.CallBackQuery
+        :returns: Реагирует на нажатие кнопки Удалить на инлайн клавиатуре и передает сообщение другой функции
+         для последуюшей обработки
+        :rtype: callback
+        """
+
+    currentevents:
+        """
+        Функция которая парсит сайты вшэ.
+        :returns: список из словарей из данных о мероприятиях
+        :rtype: Dict
+        """
+
+    rem:
+
+        """
+        Функция выводящая все мероприятия на которые записан пользователь.
+        :param message: Сообщение пользователя.
+        :type message: aiogram.types.message.Message
+        :returns: Присылает пользователю сообщение в котором говорится обо всех мероприятиях на которые он записался
+        :rtype: message.answer
+        """
+
+    final:
+
+        """
+        Функция удаляющая выбранное событтие.
+        :param callback: Принимает коллбек запрос
+        :type callback: aiogram.types.callback.CallBackQuery
+        :returns: Обрабатывает запрос с прошлой функции и удаляет выбранное событие
+        :rtype: callback
+        """
+
+    loll:
+
+        """
+        Функция обрабатывающая запрос с инлай клавиатуры сообщения.
+        :param callback: Запрос об окончаниии выбора
+        :type callback: aiogram.types.callback.CallBackQuery
+        :returns: Убирает сообщение с выбором меропритий
+        :rtype: callback
+        """
+
+    clhandler:
+
+        """
+        Функция обрабатывающая запрос с инлай клавиатуры сообщения.
+        :param callback: Обрабатывает коллбэк запрос на выбор мероприятия
+        :type callback: aiogram.types.callback.CallBackQuery
+        :returns: Передает на обработку выбранное мероприятие
+        :rtype: callback
+        """
